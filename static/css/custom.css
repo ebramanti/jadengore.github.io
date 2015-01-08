@@ -40,3 +40,7 @@
    pointer-events: none;
    cursor: default;
 }
+
+#menu a {
+    cursor: pointer;
+}
