@@ -29,11 +29,6 @@ require.config({
             location: 'vendor/hbs',
             name: 'hbs',
             main:'hbs'
-        },
-
-        {
-            location: 'vendor/skel',
-            name: 'skel'
         }
     ],
 
