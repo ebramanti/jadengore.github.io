@@ -1,0 +1,42 @@
+.avatar {
+    border-radius: 50px;
+    /*float: left;*/
+    /*margin-left: 1em;*/
+    height: 100px;
+    width: 100px;
+}
+
+.footer {
+    float: right;
+    margin-right: 1em;
+}
+
+.credits {
+    position: fixed;
+    bottom: 0px;
+}
+
+.intro {
+    padding: 0em 0em 1.5em;
+    border-bottom: 1px solid #eee;
+}
+
+.work, .education{
+    padding: 0em 0em .5em;
+    border-bottom: 1px solid #eee;
+}
+
+.fa {
+    margin-left: 5px;
+}
+
+.contact-me a {
+    color: inherit;
+    text-decoration: none;
+    padding-bottom: .5em;
+}
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
