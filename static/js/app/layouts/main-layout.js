@@ -29,6 +29,7 @@ define(function(require, exports, module) {
         initialize: function(options) {
             this.views = this.createViews();
             this.active = 'pure-menu-selected';
+            this.mobileMenuActive = false;
         },
 
         createViews: function() {
@@ -44,10 +45,10 @@ define(function(require, exports, module) {
         },
 
         mobileMenuClick: function(event) {
-            event.preventDefault();
             this.toggleClass(this.ui.layout);
             this.toggleClass(this.ui.menu);
             this.toggleClass(this.ui.menuLink);
+            this.mobileMenuActive = !this.mobileMenuActive;
         },
 
         navClick: function(event) {
@@ -56,6 +57,9 @@ define(function(require, exports, module) {
             if (id) this.setMainView(id);
             this.clearActive();
             $target.addClass(this.active);
+            if (this.mobileMenuActive) {
+                this.mobileMenuClick();
+            }
         },
 
         setMainView: function(view) {
